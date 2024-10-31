@@ -10,42 +10,42 @@ export default function Navbar() {
     <nav className="flex justify-center p-5 bg-white">
       <ul className="flex items-center gap-6 font-semibold">
         <li
-          className={`hover:text-blue-300 ${
+          className={`hover:text-blue-600 ${
             pathName == "/" ? "text-blue-500" : "text-black"
           }`}
         >
           <Link href="/">Home</Link>
         </li>
         <li
-          className={`hover:text-blue-300 ${
+          className={`hover:text-blue-600 ${
             pathName == "/coding-project" ? "text-blue-500" : "text-black"
           }`}
         >
           <Link href="/coding-project">Coding Projects</Link>
         </li>
         <li
-          className={`hover:text-blue-300 ${
+          className={`hover:text-blue-600 ${
             pathName == "/start-up" ? "text-blue-500" : "text-black"
           }`}
         >
           <Link href="/start-up">My Start-up</Link>
         </li>
         <li
-          className={`hover:text-blue-300 ${
+          className={`hover:text-blue-600 ${
             pathName == "/volunteer-project" ? "text-blue-500" : "text-black"
           }`}
         >
           <Link href="/volunteer-project">Volunteer Projetcs</Link>
         </li>
         <li
-          className={`hover:text-blue-300 ${
+          className={`hover:text-blue-600 ${
             pathName == "/poems" ? "text-blue-500" : "text-black"
           }`}
         >
           <Link href="/poems">Poems</Link>
         </li>
         <li
-          className={`hover:text-blue-300 ${
+          className={`hover:text-blue-600 ${
             pathName == "/culture-preservation" ? "text-blue-500" : "text-black"
           }`}
         >
