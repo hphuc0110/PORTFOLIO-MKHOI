@@ -1,6 +1,6 @@
 export default function Slide14() {
   return (
-    <section className="snap-start bg-amber-300 h-screen">
+    <section className="snap-start h-screen">
       <div className="gap-8 h-screen flex flex-col p-10">
         <div className="text-5xl">2. Where is the demand gap?</div>
         <div className="flex h-screen md:gap-24 lg:gap-48 flex-wrap mt-16">

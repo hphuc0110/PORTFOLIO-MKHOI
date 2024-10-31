@@ -6,7 +6,7 @@ import {
 
 export default function Slide13() {
   return (
-    <section id="business-idea" className="snap-start bg-amber-200 h-screen ">
+    <section id="business-idea" className="snap-start h-screen ">
       <div className="gap-8 h-screen flex flex-col p-10">
         <div className="text-6xl">Business Idea & performance</div>
         <div className="p-3 bg-slate-100 rounded-sm text-center text-3xl">

@@ -56,9 +56,6 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
     },
-    backgroundImage: {
-      "volunteer-slide": "url('../public/img/volunteer/slide34bg.jpg')",
-    },
   },
   plugins: [require("tailwindcss-animate")],
 };

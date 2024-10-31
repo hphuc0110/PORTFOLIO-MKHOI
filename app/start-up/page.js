@@ -1,4 +1,3 @@
-import slide34 from "@/public/img/slide34.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,6 +8,19 @@ import Slide15 from "./_components/slide15";
 import Slide16 from "./_components/slide16";
 import Slide17 from "./_components/slide17";
 import Slide18 from "./_components/slide18";
+import Slide19 from "./_components/slide19";
+import Slide20 from "./_components/slide20";
+import Slide21 from "./_components/slide21";
+import Slide22 from "./_components/slide22";
+import Slide23 from "./_components/slide23";
+import Slide24 from "./_components/slide24";
+import Slide25 from "./_components/slide25";
+import Slide29 from "./_components/slide29";
+import Slide28 from "./_components/slide28";
+import Slide27 from "./_components/slide27";
+import Slide30 from "./_components/slide30";
+import Slide31 from "./_components/slide31";
+import Slide32 from "./_components/slide32";
 
 export default function Page() {
   return (
@@ -20,9 +32,19 @@ export default function Page() {
       <Slide16 />
       <Slide17 />
       <Slide18 />
-      <section className="snap-start mix-blend-normal h-screen relative">
-        <Image src={slide34} layout="fill" objectFit="contain" alt="slide37" />
-      </section>
+      <Slide19 />
+      <Slide20 />
+      <Slide21 />
+      <Slide22 />
+      <Slide23 />
+      <Slide24 />
+      <Slide25 />
+      <Slide27 />
+      <Slide28 />
+      <Slide29 />
+      <Slide30 />
+      <Slide31 />
+      <Slide32 />
       <section
         id="coding-strategy"
         className="snap-start bg-amber-300 h-screen"
