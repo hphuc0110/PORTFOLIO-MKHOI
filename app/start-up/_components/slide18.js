@@ -4,7 +4,7 @@ export default function Slide18() {
   return (
     <section className="snap-start h-screen relative">
       <div className="gap-8 h-screen flex flex-col p-10">
-        <Image src={Slide18Pic} fill objectFit="cover" alt="slide18" />
+        <Image src={Slide18Pic} fill objectFit="contain" alt="slide18" />
       </div>
     </section>
   );
