@@ -30,7 +30,7 @@ export default function Navbar() {
           <Link href="/volunteer-project">Volunteer Projetcs</Link>
         </li>
         <li className="hover:text-blue-500">
-          <Link href="/poems">Culture Preservation</Link>
+          <Link href="/poems">Poems</Link>
         </li>
         <li className="hover:text-blue-500">
           <Link href="/culture-preservation">Culture Preservation</Link>

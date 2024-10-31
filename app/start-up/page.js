@@ -7,7 +7,8 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
-import slide37 from "@/public/img/slide37.png";
+import slide34 from "@/public/img/slide34.jpg";
+import slide15 from "@/public/img/slide15.png";
 
 export default function Page() {
   return (
@@ -115,12 +116,20 @@ export default function Page() {
       <section className="snap-start bg-amber-400 h-screen">
         <div className="gap-8 h-screen flex flex-col p-10">
           <div className="text-5xl">3. Business Idea</div>
-          <div className="bg-slate-500 w-full h-full">image</div>
+          <div className="w-full h-full flex justify-center">
+            <Image
+              src={slide15}
+              height={0}
+              width={0}
+              style={{ height: "100%", width: "auto" }}
+              alt="slide15"
+            />
+          </div>
         </div>
       </section>
       <section className="snap-start bg-amber-400 h-screen">
         <div className="gap-8 h-screen flex flex-col p-10">
-          <div className="text-xl bg-red-500 w-fit text-white px-2">
+          <div className="text-3xl bg-red-500 w-fit text-white px-2 font-semibold">
             LEARN ON DEMAND, NO NEED TO ENROLL IN A FULL COURSE.
           </div>
           <div className="h-full flex gap-16 overflow-x-auto">
@@ -188,8 +197,114 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="snap-start bg-amber-300 h-full w-full relative">
-        <Image src={slide37} layout="fill" objectFit="contain" alt="slide37" />
+      <section className="snap-start bg-amber-400 h-screen">
+        <div className="gap-8 h-screen flex flex-col p-10">
+          <div className="text-3xl bg-blue-500 w-fit text-white px-2 font-semibold">
+            LEARN EVERYWHERE, ANYTIME
+          </div>
+          <div className="flex h-screen md:gap-24 lg:gap-48 flex-wrap mt-16">
+            <div className="flex flex-col flex-1  min-w-[400px] gap-4 text-2xl">
+              <div>image1</div>
+              <div>Finding instructors in the middle of the night</div>
+              <div className="flex">
+                <div>image2</div>
+                <div>image3</div>
+              </div>
+              <div className="text-center">
+                Busy workers with only 20 min of free time
+              </div>
+            </div>
+            <div className="flex flex-col flex-1  min-w-[400px] gap-4 text-3xl">
+              <div>
+                Automatically connect with a suitable instructor who can meet
+                your needs in just 5 minutes
+              </div>
+              <div>
+                Learn English and get answers immediately no matter where or
+                when you are
+              </div>
+              <div className="bg-red-500 w-fit text-white px-2 font-semibold">
+                GRABSTUDY: Your English, On Demand
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="snap-start h-screen">
+        <div className="gap-8 h-screen flex flex-col p-10 overflow-x-auto">
+          <div className="text-3xl bg-red-500 w-fit text-white px-2 font-semibold">
+            “QUALITY” INSTRUCTORS
+          </div>
+          <div className="flex flex-col">
+            <div className="text-3xl flex-1 text-white  font-semibold flex items-center justify-center">
+              <div className="bg-blue-500 w-fit px-2">
+                OUR DEFINITION OF “QUALITY”
+              </div>
+            </div>
+            <div className="flex gap-8 mt-16">
+              <div className="min-w-[400px]">
+                <div className="flex justify-center items-center h-[100px] text-3xl font-semibold text-center p-4">
+                  ENGLISH LEVEL
+                </div>
+                <div className="border border-dashed border-slate-600 rounded-3xl p-6 text-2xl flex flex-col gap-4 bg-white ">
+                  <div>
+                    - <strong>IELTS 8.0</strong> and up
+                  </div>
+                  <div>
+                    - Minimum <strong>1.5 years of English</strong> teaching
+                    experience.
+                  </div>
+                  <div>
+                    - Requires at least <strong>2 months of training</strong>{" "}
+                    with GrabStudy's expert team.
+                  </div>
+                </div>
+              </div>
+              <div className="min-w-[800px]">
+                <div className="flex justify-center items-center h-[100px] text-2xl font-semibold text-center p-4">
+                  PROFICIENCY IN SOCIAL SCIENCE KNOWLEDGE AND SPECIALIZATION
+                </div>
+                <div className="border border-dashed border-slate-600 rounded-3xl p-6 text-2xl flex flex-col gap-4 bg-white ">
+                  <div>
+                    - <strong>In-depth knowledge</strong> of various topics to
+                    foster rich and meaningful conversations.
+                  </div>
+                  <div>
+                    - Ability to{" "}
+                    <strong>
+                      connect lesson content to real-world events and issues.
+                    </strong>
+                  </div>
+                  <div>
+                    - <strong>Committed to staying informed</strong> by reading
+                    relevant news articles and academic research.
+                  </div>
+                </div>
+              </div>
+              <div className="min-w-[500px]">
+                <div className="flex justify-center items-center h-[100px] text-3xl font-semibold text-center p-4">
+                  CUSTOMER SERVICE
+                </div>
+                <div className="border border-dashed border-slate-600 rounded-3xl p-6 text-2xl flex flex-col gap-4 bg-white ">
+                  <div>
+                    Always{" "}
+                    <strong>
+                      aligns with the learner's preferred learning style.
+                    </strong>
+                  </div>
+                  <div>
+                    <strong>No assessments or requirements.</strong> Instead, it
+                    encourages questions and opportunities for learners to share
+                    their perspectives in English.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="snap-start mix-blend-normal h-screen relative">
+        <Image src={slide34} layout="fill" objectFit="contain" alt="slide37" />
       </section>
       <section
         id="coding-strategy"
