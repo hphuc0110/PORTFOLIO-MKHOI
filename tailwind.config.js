@@ -8,6 +8,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        space: "url('../public/img/bg-space.jpg')",
+        volunteer: "url('../public/img/volunteer/bg.png')",
+      },
+      scale: {
+        250: "2.5",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

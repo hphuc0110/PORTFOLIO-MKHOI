@@ -32,6 +32,7 @@ import pic31 from "@/public/img/culture/Slide31.PNG";
 import pic32 from "@/public/img/culture/Slide32.PNG";
 
 export const CultureData = [
+  pic1,
   pic2,
   pic3,
   pic4,

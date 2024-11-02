@@ -1,34 +1,49 @@
-import Navbar from "@/components/Navbar/Navbar";
 import { CultureData } from "@/data/culture";
-import picBanner from "@/public/img/culture/Slide1.PNG";
 import Image from "next/image";
 import Link from "next/link";
+import Banner from "./_components/banner";
+import Section2 from "./_components/section2";
+import { FusionData } from "@/data/fusion";
+import Section3 from "./_components/section3";
 
 export default function Page() {
   return (
     <div className="snap-y snap-mandatory h-screen overflow-auto text-black">
       <section id="section-1" className="snap-start bg-amber-100 h-screen">
-        <div className="h-screen flex flex-col">
-          <Navbar />
-          <div className="h-full flex justify-center relative">
-            <Image
-              src={picBanner}
-              layout="fill"
-              objectFit="cover"
-              alt="banner"
-            />
-          </div>
-        </div>
+        <Banner />
       </section>
-      {CultureData.map((item, idx) => {
-        return (
-          <section key={idx} className="snap-start h-screen relative">
-            <div className="gap-8 h-screen flex flex-col p-10">
-              <Image src={item} fill objectFit="cover" alt="slide38" />
-            </div>
-          </section>
-        );
-      })}
+      <Section2 />
+      <div>
+        {CultureData.map((item, idx) => {
+          return (
+            <section
+              key={idx}
+              id={`pic-${idx}`}
+              className="snap-start h-screen relative"
+            >
+              <div className="gap-8 h-screen flex flex-col p-10">
+                <Image src={item} fill objectFit="cover" alt="slide38" />
+              </div>
+            </section>
+          );
+        })}
+      </div>
+      <Section3 />
+      <div>
+        {FusionData.map((item, idx) => {
+          return (
+            <section
+              key={idx}
+              id={`fusion-${idx}`}
+              className="snap-start h-screen relative"
+            >
+              <div className="gap-8 h-screen flex flex-col p-10">
+                <Image src={item} fill objectFit="contain" alt="slide38" />
+              </div>
+            </section>
+          );
+        })}
+      </div>
       <Link
         href="/culture-preservation/#section-1"
         className="fixed bottom-8 right-8 bg-gray-800 text-white p-3 rounded-full shadow-md hover:bg-gray-700 focus:outline-none transition-opacity duration-300 select-none"

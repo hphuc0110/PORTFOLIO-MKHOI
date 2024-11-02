@@ -1,4 +1,4 @@
-import Slide36Pic from "@/public/img/volunteer/slide36.jpg";
+import Slide36Pic from "@/public/img/volunteer/slide36.png";
 import Image from "next/image";
 export default function Slide36() {
   return (

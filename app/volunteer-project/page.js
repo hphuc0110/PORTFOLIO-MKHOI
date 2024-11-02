@@ -8,6 +8,7 @@ import Slide38 from "./_components/slide38";
 import Slide39 from "./_components/slide39";
 import Slide40 from "./_components/slide40";
 import Slide41 from "./_components/slide41";
+import Slide42 from "./_components/slide42";
 
 export default function Page() {
   return (
@@ -21,6 +22,7 @@ export default function Page() {
       <Slide39 />
       <Slide40 />
       <Slide41 />
+      <Slide42 />
       <Link
         href="/volunteer-project/#main"
         className="fixed bottom-8 right-8 bg-gray-800 text-white p-3 rounded-full shadow-md hover:bg-gray-700 focus:outline-none transition-opacity duration-300 select-none"

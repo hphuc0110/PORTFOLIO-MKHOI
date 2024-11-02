@@ -40,11 +40,11 @@ export default function Page() {
       <Slide24 />
       <Slide25 />
       <Slide27 />
-      <Slide28 />
+      {/* <Slide28 />
       <Slide29 />
       <Slide30 />
       <Slide31 />
-      <Slide32 />
+      <Slide32 /> */}
       <section
         id="coding-strategy"
         className="snap-start bg-amber-300 h-screen"

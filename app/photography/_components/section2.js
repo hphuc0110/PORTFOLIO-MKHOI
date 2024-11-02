@@ -1,0 +1,40 @@
+"use client";
+export default function Section2() {
+  return (
+    <section className="snap-start h-screen min-w-[1440px] bg-black text-white">
+      <div className="gap-8 h-screen flex flex-col relative p-20">
+        <div className="text-6xl font-semibold text-white flex flex-col gap-2">
+          <div>FILMING</div>
+        </div>
+        <div className="flex flex-col gap-4 text-white max-w-[800px]">
+          <div>
+            My promotional video for one of the most prestigious tea brands in
+            Vietnam - Phuc Long tea
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <div>
+            <div className="text-2xl text-amber-300">PHÚC LONG</div>
+            <div className="text-8xl font-semibold">
+              THE MASTERY
+              <br />
+              CREATING
+              <br />
+              ORIGINALI-TEA
+            </div>
+          </div>
+          <video
+            width="800"
+            className="rounded-lg shadow-xl"
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/slide58.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+  );
+}
