@@ -44,15 +44,15 @@ export default function Section4() {
           </div>
         </div>
 
-        <video
-          className="w-screen h-screen rounded-xl shadow-xl z-10"
-          autoPlay
-          muted
-          loop
-        >
-          <source src={video60} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div>
+          <iframe
+            src="https://player.vimeo.com/video/1025653022?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;controls=0&amp;muted=1&amp;loop=1"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            className="h-screen w-screen"
+            title="slide60"
+          ></iframe>
+        </div>
       </div>
     </section>
   );

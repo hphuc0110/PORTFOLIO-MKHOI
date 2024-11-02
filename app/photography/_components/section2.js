@@ -24,16 +24,26 @@ export default function Section2() {
               ORIGINALI-TEA
             </div>
           </div>
-          <video
+          {/* <video
             width="800"
             className="rounded-lg shadow-xl"
             autoPlay
             muted
             loop
           >
-            <source src={video58} type="video/mp4" />
+            <source src="https://vimeo.com/1025652923" type="video/mp4" />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
+          <div>
+            <iframe
+              src="https://player.vimeo.com/video/1025652923?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;controls=0&amp;muted=1&amp;loop=1"
+              frameBorder="0"
+              width="640"
+              height="360"
+              allow="autoplay; picture-in-picture; clipboard-write"
+              title="slide58"
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>
