@@ -1,4 +1,5 @@
 "use client";
+import video58 from "@/public/slide58.mp4";
 export default function Section2() {
   return (
     <section className="snap-start h-screen min-w-[1440px] bg-black text-white">
@@ -30,7 +31,7 @@ export default function Section2() {
             muted
             loop
           >
-            <source src="/slide58.mp4" type="video/mp4" />
+            <source src={video58} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
