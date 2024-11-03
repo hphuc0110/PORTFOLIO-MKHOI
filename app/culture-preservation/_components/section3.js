@@ -1,36 +1,33 @@
-import Navbar from "@/components/Navbar/Navbar";
-import pic1 from "@/public/img/culture/Slide1.PNG";
-import Image from "next/image";
-import star from "@/public/icon/star.png";
-import Link from "next/link";
-import { CultureData } from "@/data/culture";
 import { FusionData } from "@/data/fusion";
+import star from "@/public/icon/star.png";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Section3() {
   return (
     <section
       id="section-3"
-      className="items-center snap-start h-screen relative min-w-[1440px]"
+      className="items-center snap-start h-screen relative overflow-auto transition-all"
       style={{
         backgroundColor: "#212121",
       }}
     >
       <div className="flex flex-col p-20 h-screen relative">
         <div className="flex flex-col">
-          <div className="text-5xl font-semibold text-amber-500">
+          <div className="text-3xl xl:text-5xl font-semibold text-amber-500">
             MY RAW PATH TO REIMAGINING TRADITION
           </div>
-          <div className="text-2xl text-white">
+          <div className="text-xl xl:text-2xl text-white">
             Crafting the Future with Threads of the Past
           </div>
-          <div className="mt-5 text-xl text-white">
+          <div className="mt-5 xl:text-xl text-white">
             Bánh giò—a traditional Vietnamese delicacy—is not merely food but a
             nostalgic symbol, deeply woven into the culinary and cultural
             heritage of Northern Vietnam. Yet, the familiarity of Bánh giò is
             slowly fading, especially among younger Vietnamese who may no longer
             recognize or appreciate its cultural significance.
           </div>
-          <div className="mt-5 text-xl text-white">
+          <div className="mt-5 xl:text-xl text-white">
             In response, I am on a mission to reintroduce Bánh giò to a new
             generation. This transformation retains the essence and traditional
             flavors of Bánh giò while incorporating unique, modern ingredients
@@ -40,7 +37,7 @@ export default function Section3() {
             that resonates with their modern palates and lifestyle.
           </div>
         </div>
-        <div className="flex flex-wrap gap-6 mt-12 justify-center transition-all duration-75">
+        <div className="flex flex-wrap gap-6 py-12 justify-center transition-all duration-75">
           {FusionData.map((item, idx) => {
             return (
               <Link href={`/culture-preservation/#fusion-${idx}`}>
@@ -55,14 +52,6 @@ export default function Section3() {
           })}
         </div>
       </div>
-
-      <Image
-        src={star}
-        width={150}
-        height={150}
-        alt="star"
-        className="absolute top-[150px] -left-0"
-      />
     </section>
   );
 }

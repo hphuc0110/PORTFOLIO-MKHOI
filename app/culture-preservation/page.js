@@ -29,21 +29,7 @@ export default function Page() {
         })}
       </div>
       <Section3 />
-      <div>
-        {FusionData.map((item, idx) => {
-          return (
-            <section
-              key={idx}
-              id={`fusion-${idx}`}
-              className="snap-start h-screen relative"
-            >
-              <div className="gap-8 h-screen flex flex-col p-10">
-                <Image src={item} fill objectFit="contain" alt="slide38" />
-              </div>
-            </section>
-          );
-        })}
-      </div>
+
       <Link
         href="/culture-preservation/#section-1"
         className="fixed bottom-8 right-8 bg-gray-800 text-white p-3 rounded-full shadow-md hover:bg-gray-700 focus:outline-none transition-opacity duration-300 select-none"

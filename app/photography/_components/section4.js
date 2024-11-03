@@ -1,11 +1,13 @@
 "use client";
-import video60 from "@/public/video/slide60.mp4";
+import aveda from "@/public/img/photography/aveda.jpg";
+import Image from "next/image";
+
 export default function Section4() {
   return (
-    <section className="snap-start h-screen min-w-[1440px] bg-black text-white">
-      <div className="h-screen relative">
-        <div className="absolute top-[100px] pt-[100px] left-[20px] z-30 px-32 backdrop-blur-lg h-screen w-[98%]">
-          <div className="text-2xl text-white flex flex-col gap-4 max-w-[1000px]">
+    <section className="snap-start h-screen bg-black text-white overflow-auto">
+      <div className="h-full relative ">
+        <div className="absolute h-screen w-full z-30 p-12 lg:p-32 backdrop-blur-sm ">
+          <div className="text-2xl h-full text-white flex flex-col gap-4 max-w-[1000px] justify-start">
             <div className="text-5xl font-semibold">
               The mastery of creating originali-tea
             </div>
@@ -44,15 +46,7 @@ export default function Section4() {
           </div>
         </div>
 
-        <div>
-          <iframe
-            src="https://player.vimeo.com/video/1025653022?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;controls=0&amp;muted=1&amp;loop=1"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-            className="h-screen w-screen"
-            title="slide60"
-          ></iframe>
-        </div>
+        <Image src={aveda} fill objectFit="cover" alt={aveda} />
       </div>
     </section>
   );

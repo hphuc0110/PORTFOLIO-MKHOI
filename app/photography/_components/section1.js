@@ -6,11 +6,11 @@ import Link from "next/link";
 export default function Section1() {
   return (
     <section
-      className="snap-start h-screen min-w-[1440px]"
+      className="snap-start h-screen overflow-auto"
       style={{ backgroundColor: "#212121" }}
     >
       <div className="gap-8 h-screen flex flex-col items-center relative p-20">
-        <div className="text-6xl font-semibold text-white flex flex-col gap-2">
+        <div className="text-3xl lg:text-6xl font-semibold text-white flex flex-col gap-2">
           <div>PHOTOGRAPHY</div>
         </div>
         <div className="flex flex-col gap-4 text-white max-w-[800px]">
@@ -27,7 +27,7 @@ export default function Section1() {
             surreal.
           </div>
         </div>
-        <div className="flex flex-wrap gap-6 mt-6 justify-center transition-all ">
+        <div className="flex flex-wrap gap-6 mt-6 justify-center transition-all pb-12">
           {PhotoData.map((item, idx) => (
             <Link href={`/photography/#pic-${idx}`}>
               <Image
@@ -39,27 +39,6 @@ export default function Section1() {
             </Link>
           ))}
         </div>
-        <Image
-          src={star}
-          width={150}
-          height={150}
-          alt="star"
-          className="absolute bottom-[150px] -right-0"
-        />
-        <Image
-          src={star}
-          width={150}
-          height={150}
-          alt="star"
-          className="absolute top-[30px] -left-0"
-        />
-        <Image
-          src={star}
-          width={150}
-          height={150}
-          alt="star"
-          className="absolute bottom-[200px] -left-0"
-        />
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar/Navbar";
 import pic1 from "@/public/img/culture/Slide1.PNG";
+import pic2 from "@/public/img/culture/banhgio.PNG";
 import Image from "next/image";
 import star from "@/public/icon/star.png";
 import Link from "next/link";
@@ -8,18 +9,18 @@ export default function Banner() {
   return (
     <section
       id="main"
-      className="items-center snap-start h-screen relative"
+      className="items-center snap-start h-screen relative overflow-auto"
       style={{
         backgroundColor: "#212121",
       }}
     >
       <Navbar color="dark" />
-      <div className="flex flex-col mt-12 h-screen relative">
+      <div className="flex flex-col mt-12 relative">
         <div className="flex flex-col items-center text-center">
-          <div className="text-5xl font-semibold text-amber-500">
+          <div className="text-3xl xl:text-5xl font-semibold text-amber-500">
             CULTURAL PRESERVATION
           </div>
-          <div className="mt-5 max-w-[800px] text-xl text-white">
+          <div className="mt-5 max-w-[800px] xl:text-xl text-white">
             Our cultural heritage isn’t simply history; it’s a living story that
             evolves alongside us. To keep tradition vibrant, I seek to blend its
             richness with contemporary elements, making it meaningful and
@@ -32,10 +33,10 @@ export default function Banner() {
             <Image width={400} src={pic1} alt="pic1" />
             <div className="flex flex-col justify-between">
               <div>
-                <div className="text-3xl text-amber-500 font-semibold">
+                <div className="text-xl xl:text-3xl text-amber-500 font-semibold">
                   The Preservation of Traditional Arts form - Tuồng
                 </div>
-                <div className="text-xl">
+                <div className="xl:text-xl">
                   Every culture has its essence, and for me, Vietnamese tuồng
                   theater is a gem worth preserving. Tuồng speaks in a language
                   of the past that doesn’t easily resonate with the younger
@@ -54,13 +55,13 @@ export default function Banner() {
             </div>
           </div>
           <div className="flex gap-4">
-            <Image width={400} src={pic1} alt="pic1" />
+            <Image width={400} src={pic2} alt="pic2" />
             <div className="flex flex-col justify-between">
               <div>
-                <div className="text-3xl text-amber-500 font-semibold">
+                <div className="text-xl xl:text-3xl text-amber-500 font-semibold">
                   “REINVENTING BÁNH GIÒ" - A RAW PATH TO REIMAGINING TRADITION
                 </div>
-                <div className="text-xl">
+                <div className="xl:text-xl">
                   Witnessing the disconnection between young Vietnamese and
                   their rich cultural heritage, I envisioned a canvas where
                   tradition could be painted with the vibrant colors of
@@ -79,14 +80,6 @@ export default function Banner() {
           </div>
         </div>
       </div>
-
-      <Image
-        src={star}
-        width={150}
-        height={150}
-        alt="star"
-        className="absolute top-[150px] -left-0"
-      />
     </section>
   );
 }

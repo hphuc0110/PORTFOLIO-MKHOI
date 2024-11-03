@@ -45,14 +45,7 @@ export default function Page() {
       <Slide30 />
       <Slide31 />
       <Slide32 /> */}
-      <section
-        id="coding-strategy"
-        className="snap-start bg-amber-300 h-screen"
-      >
-        <div className="gap-8 h-screen flex flex-col justify-center align-middle text-center">
-          <div className="text-6xl">Coding Strategy</div>
-        </div>
-      </section>
+
       <Link
         href="/start-up/#main"
         className="fixed bottom-8 right-8 bg-gray-800 text-white p-3 rounded-full shadow-md hover:bg-gray-700 focus:outline-none transition-opacity duration-300 select-none"

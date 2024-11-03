@@ -8,31 +8,33 @@ export default function Section2() {
       className="snap-start h-screen"
       style={{ backgroundColor: "#07080C" }}
     >
-      <div className="gap-8 h-screen flex flex-col text-center relative">
-        <div className="text-4xl font-semibold mt-20 text-white flex flex-col gap-2">
+      <div className="gap-8 h-screen flex flex-col relative">
+        <div className="text-center text-2xl lg:text-4xl font-semibold mt-10 lg:mt-20 text-white flex flex-col gap-2">
           <div>Technology used in the App</div>
           <div>Front-end</div>
         </div>
-        <div className="p-24 pt-12 flex w-full justify-center gap-24">
-          <div className="w-[300px] text-start flex flex-col gap-4">
-            <div className="h-[300px] rounded-lg relative">
-              <Image src={react} className="rounded-3xl" alt="react" />
+        <div className="h-full p-24 pt-12 flex justify-evenly gap-6">
+          <div className="max-w-[300px] flex flex-col gap-4">
+            <div className="w-full max-h-[300px] h-full relative">
+              <Image src={react} fill objectFit="contain" alt="react" />
             </div>
-            <div className="text-white">
+            <div className="text-white h-full">
               React is a free and open-source front-end JavaScript library for
               building user interfaces or UI components. We use React to build
               the screen and view layer of the LukaMove Front-end Application.
             </div>
           </div>
-          <div className="w-[300px] text-start flex flex-col gap-4">
-            <div className="h-[300px] rounded-lg relative">
+          <div className="max-w-[300px] flex flex-col gap-4">
+            <div className="w-full max-h-[300px] h-full relative">
               <Image
                 src={redux}
-                className="rounded-3xl p-10 bg-white"
+                fill
+                objectFit="contain"
+                className="rounded-3xl"
                 alt="redux"
               />
             </div>
-            <div className="text-white">
+            <div className="text-white h-full">
               Redux is an open-source JavaScript library for managing
               application state. We used Redux to managing application state of
               LukaMove Front-end Application. 

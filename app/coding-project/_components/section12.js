@@ -6,20 +6,41 @@ import star from "@/public/icon/star.png";
 
 export default function Section12() {
   return (
-    <section className="snap-start h-screen bg-space">
+    <section className="snap-start h-screen bg-space overflow-auto">
       <div className="gap-3 h-screen flex flex-col  text-center relative">
-        <div className="text-white flex gap-4 w-full justify-center mt-48">
-          <div className="flex flex-col w-fit gap-4">
-            <Image src={section121} width={300} alt="section121" />
+        <div className="text-white flex flex-wrap gap-4 h-full justify-center p-12 xl:p-12">
+          <div className="flex flex-col flex-1 h-full min-w-[200px] gap-4">
+            <div className="w-full h-full relative">
+              <Image
+                src={section121}
+                fill
+                objectFit="contain"
+                alt="section121"
+              />
+            </div>
             <div>Tracking order screen</div>
           </div>
-          <div className="flex flex-col w-fit gap-4">
-            <Image src={section122} width={300} alt="section122" />
+          <div className="flex flex-col flex-1 h-full min-w-[200px] gap-4">
+            <div className="w-full h-full relative">
+              <Image
+                src={section122}
+                fill
+                objectFit="contain"
+                alt="section122"
+              />
+            </div>
             <div>promotion screen</div>
           </div>
 
-          <div className="flex flex-col w-fit gap-4">
-            <Image src={section123} width={300} alt="section123" />
+          <div className="flex flex-col flex-1 h-full min-w-[200px] gap-4">
+            <div className="w-full h-full relative">
+              <Image
+                src={section123}
+                fill
+                objectFit="contain"
+                alt="section123"
+              />
+            </div>
             <div>feedback screen</div>
           </div>
         </div>

@@ -12,6 +12,9 @@ module.exports = {
         space: "url('../public/img/bg-space.jpg')",
         volunteer: "url('../public/img/volunteer/bg.png')",
       },
+      animation: {
+        fade: "fadeOut 2.5s ease-in-out",
+      },
       scale: {
         250: "2.5",
       },
@@ -62,6 +65,12 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      keyframes: (theme) => ({
+        fadeOut: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      }),
     },
   },
   plugins: [require("tailwindcss-animate")],

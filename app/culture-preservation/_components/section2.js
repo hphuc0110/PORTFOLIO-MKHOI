@@ -11,17 +11,17 @@ export default function Section2() {
   return (
     <section
       id="section-2"
-      className="items-center snap-start h-screen relative min-w-[1440px]"
+      className="items-center snap-start h-screen relative overflow-auto"
       style={{
         backgroundColor: "#212121",
       }}
     >
       <div className="flex flex-col p-20 h-screen relative">
         <div className="flex flex-col">
-          <div className="text-5xl font-semibold text-amber-500">
+          <div className="text-3xl xl:text-5xl font-semibold text-amber-500">
             CULTURAL PRESERVATION
           </div>
-          <div className="mt-5 text-xl text-white">
+          <div className="mt-5 xl:text-xl text-white">
             Tuồng, an art form that has existed for centuries and stands as one
             of the symbols of Vietnamese culture, is gradually fading as its
             essence no longer resonates with the younger generation,
@@ -35,7 +35,7 @@ export default function Section2() {
             captivated by lesser-known narratives!
           </div>
         </div>
-        <div className="flex flex-wrap gap-6 justify-center mt-24 transition-all ">
+        <div className="flex flex-wrap gap-6 justify-center py-12 xl:py-24 transition-all ">
           {data.map((item, idx) => {
             return (
               <Link href={`/culture-preservation/#pic-${idx}`}>
@@ -50,14 +50,6 @@ export default function Section2() {
           })}
         </div>
       </div>
-
-      <Image
-        src={star}
-        width={150}
-        height={150}
-        alt="star"
-        className="absolute top-[150px] -left-0"
-      />
     </section>
   );
 }

@@ -18,7 +18,7 @@ export default function Navbar({ color = "light" }) {
   return (
     <nav
       className={`flex justify-center p-5`}
-      style={{ backgroundColor: isDark ? "#212121" : "#fff" }}
+      style={{ backgroundColor: isDark ? "transparent" : "#fff" }}
     >
       <ul className="flex items-center gap-6 font-semibold">
         {list.map((item, idx) => (

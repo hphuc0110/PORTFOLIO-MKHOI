@@ -8,12 +8,7 @@ import Section4 from "./_components/section4";
 export default function Page() {
   return (
     <div className="snap-y snap-mandatory h-screen overflow-auto text-black">
-      <section id="section-1" className="snap-start bg-amber-100 h-screen">
-        <div className="relative">
-          <Navbar />
-          <Banner />
-        </div>
-      </section>
+      <Banner />
       <Section1 />
       <Section2 />
       <Section3 />

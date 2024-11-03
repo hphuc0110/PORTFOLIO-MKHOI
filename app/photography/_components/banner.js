@@ -2,6 +2,7 @@ import Image from "next/image";
 import section1Pic from "@/public/img/coding/section1.png";
 import star from "@/public/icon/star.png";
 import planet from "@/public/icon/planet.png";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Banner() {
   return (
@@ -9,8 +10,9 @@ export default function Banner() {
       className="snap-start h-screen"
       style={{ backgroundColor: "#212121" }}
     >
+      <Navbar />
       <div className="gap-8 h-screen flex flex-col relative p-20">
-        <div className="text-6xl font-semibold text-white flex flex-col gap-2">
+        <div className="text-3xl lg:text-6xl font-semibold text-white flex flex-col gap-2">
           <div>PHOTOGRAPHY & FILMING</div>
         </div>
         <div className="flex flex-col gap-4 text-white max-w-[800px]">
@@ -30,34 +32,6 @@ export default function Banner() {
             experience.
           </div>
         </div>
-        <Image
-          src={star}
-          width={150}
-          height={150}
-          alt="star"
-          className="absolute bottom-[150px] -right-0"
-        />
-        <Image
-          src={star}
-          width={150}
-          height={150}
-          alt="star"
-          className="absolute top-[30px] -left-0"
-        />
-        <Image
-          src={star}
-          width={150}
-          height={150}
-          alt="star"
-          className="absolute bottom-[200px] -left-0"
-        />
-        <Image
-          src={planet}
-          width={1000}
-          height={1000}
-          alt="star"
-          className="absolute top-0 -right-0"
-        />
       </div>
     </section>
   );

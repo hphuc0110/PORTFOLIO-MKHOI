@@ -1,10 +1,10 @@
 "use client";
-import video58 from "@/public/slide58.mp4";
+
 export default function Section2() {
   return (
-    <section className="snap-start h-screen min-w-[1440px] bg-black text-white">
+    <section className="snap-start h-screen bg-black text-white overflow-auto">
       <div className="gap-8 h-screen flex flex-col relative p-20">
-        <div className="text-6xl font-semibold text-white flex flex-col gap-2">
+        <div className="text-3xl xl:text-5xl font-semibold text-white flex flex-col gap-2">
           <div>FILMING</div>
         </div>
         <div className="flex flex-col gap-4 text-white max-w-[800px]">
@@ -16,7 +16,7 @@ export default function Section2() {
         <div className="flex justify-between">
           <div>
             <div className="text-2xl text-amber-300">PHÚC LONG</div>
-            <div className="text-8xl font-semibold">
+            <div className="text-4xl xl:text-6xl font-semibold">
               THE MASTERY
               <br />
               CREATING

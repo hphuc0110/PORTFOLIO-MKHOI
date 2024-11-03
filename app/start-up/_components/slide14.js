@@ -3,13 +3,13 @@ import section32 from "@/public/img/startup/section32.png";
 import Image from "next/image";
 export default function Slide14() {
   return (
-    <section className="snap-start h-screen bg-black text-white">
+    <section className="snap-start h-screen bg-black text-white px-12">
       <div className="gap-8 h-screen flex flex-col justify-center items-center pt-24">
-        <div className="text-5xl text-center font-semibold">
+        <div className="text-3xl xl:text-5xl text-center font-semibold">
           Where is the demand gap?
         </div>
-        <div className="flex h-screen mt-16 gap-20">
-          <div className="flex flex-col w-[500px] gap-4 text-xl items-center">
+        <div className="flex h-screen my-16 gap-20">
+          <div className="flex flex-col max-w-[500px] gap-4 text-xl items-center">
             <div className="flex flex-col items-center gap-4">
               <Image src={section31} alt="section31" />
               <div className="text-3xl">Teacher</div>
@@ -37,7 +37,7 @@ export default function Slide14() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-[500px] gap-4 text-xl items-center">
+          <div className="flex flex-col max-w-[500px] gap-4 text-xl items-center">
             <div className="flex flex-col items-center gap-4">
               <Image src={section32} alt="section31" />
               <div className="text-3xl">Learner</div>

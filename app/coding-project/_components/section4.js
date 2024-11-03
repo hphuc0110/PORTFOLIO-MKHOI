@@ -1,5 +1,5 @@
 import Image from "next/image";
-import docker from "@/public/img/coding/docker.svg";
+import docker from "@/public/img/coding/docker.png";
 import cloud from "@/public/img/coding/cloud.png";
 
 export default function Section4() {
@@ -9,34 +9,38 @@ export default function Section4() {
       style={{ backgroundColor: "#07080C" }}
     >
       <div className="gap-8 h-screen flex flex-col text-center relative">
-        <div className="text-4xl font-semibold mt-20 text-white flex flex-col gap-2">
+        <div className="text-2xl lg:text-4xl font-semibold mt-20 text-white flex flex-col gap-2">
           <div>Deployment & Hosting </div>
         </div>
-        <div className="p-24 pt-12 flex w-full justify-center gap-24">
-          <div className="w-[300px] text-start flex flex-col gap-4">
-            <div className="h-[300px] rounded-lg relative">
+        <div className="p-24 pt-12 flex h-full justify-evenly gap-24">
+          <div className="max-w-[300px] text-start flex flex-col gap-4">
+            <div className="w-full max-h-[300px] h-full rounded-lg relative">
               <Image
                 src={docker}
-                className="rounded-3xl bg-white p-5"
+                fill
+                objectFit="contain"
+                className="rounded-3xl "
                 alt="docker"
               />
             </div>
-            <div className="text-white">
+            <div className="text-white h-full">
               We used Docker to package system components—such as the front-end
               application, API Gateway, API services, background services, and
               caching service—into containers, enabling seamless deployment on
               Amazon Web Services.
             </div>
           </div>
-          <div className="w-[300px] text-start flex flex-col gap-4">
-            <div className="h-[300px] rounded-lg relative">
+          <div className="max-w-[300px] text-start flex flex-col gap-4">
+            <div className="w-full max-h-[300px] h-full rounded-lg relative">
               <Image
                 src={cloud}
-                className="rounded-3xl p-10 bg-white"
+                fill
+                objectFit="contain"
+                className="rounded-3xl "
                 alt="cloud"
               />
             </div>
-            <div className="text-white">
+            <div className="text-white h-full">
               We used Google Cloud Platform to use API to build Map such as the
               front-end application, API Gateway, API services, background
               services, and caching service—into containers.
