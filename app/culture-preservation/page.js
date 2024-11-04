@@ -5,13 +5,13 @@ import Banner from "./_components/banner";
 import Section2 from "./_components/section2";
 import { FusionData } from "@/data/fusion";
 import Section3 from "./_components/section3";
+import Section1 from "./_components/section1";
 
 export default function Page() {
   return (
     <div className="snap-y snap-mandatory h-screen overflow-auto text-black">
-      <section id="section-1" className="snap-start bg-amber-100 h-screen">
-        <Banner />
-      </section>
+      <Banner />
+      <Section1 />
       <Section2 />
       <div>
         {CultureData.map((item, idx) => {
@@ -21,7 +21,7 @@ export default function Page() {
               id={`pic-${idx}`}
               className="snap-start h-screen relative"
             >
-              <div className="gap-8 h-screen flex flex-col p-10">
+              <div className="gap-8 h-screen  flex flex-col p-10">
                 <Image src={item} fill objectFit="cover" alt="slide38" />
               </div>
             </section>

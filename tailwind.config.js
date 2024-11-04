@@ -11,6 +11,7 @@ module.exports = {
       backgroundImage: {
         space: "url('../public/img/bg-space.jpg')",
         volunteer: "url('../public/img/volunteer/bg.png')",
+        star: "url('../public/img/dashboard/bg-star.png')",
       },
       animation: {
         fade: "fadeOut 2.5s ease-in-out",

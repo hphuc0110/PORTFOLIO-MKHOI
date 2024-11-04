@@ -2,6 +2,7 @@ import Section1 from "@/components/dashboard/section1";
 import Section2 from "@/components/dashboard/section2";
 import Section3 from "@/components/dashboard/section3";
 import Section4 from "@/components/dashboard/section4";
+import Section42 from "@/components/dashboard/section42";
 import Section5 from "@/components/dashboard/section5";
 import Section6 from "@/components/dashboard/section6";
 import Section7 from "@/components/dashboard/section7";
@@ -15,6 +16,7 @@ export default function Home() {
         <Section2 />
         <Section3 />
         <Section4 />
+        <Section42 />
         <Section5 />
         <Section6 />
         <Section7 />

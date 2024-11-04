@@ -7,17 +7,14 @@ export default function Section3() {
   return (
     <section
       id="section-3"
-      className="items-center snap-start h-screen relative overflow-auto transition-all"
-      style={{
-        backgroundColor: "#212121",
-      }}
+      className="items-center snap-start xl:h-screen bg-black bg-star relative transition-all"
     >
-      <div className="flex flex-col p-20 h-screen relative">
-        <div className="flex flex-col">
-          <div className="text-3xl xl:text-5xl font-semibold text-amber-500">
+      <div className="flex flex-col p-20 relative">
+        <div className="flex flex-col text-center">
+          <div className="text-xl md:text-3xl xl:text-5xl font-semibold bg-gradient-to-r from-blue-700 to-blue-400 inline-block text-transparent bg-clip-text">
             MY RAW PATH TO REIMAGINING TRADITION
           </div>
-          <div className="text-xl xl:text-2xl text-white">
+          <div className="text-md md:text-xl xl:text-2xl text-white">
             Crafting the Future with Threads of the Past
           </div>
           <div className="mt-5 xl:text-xl text-white">

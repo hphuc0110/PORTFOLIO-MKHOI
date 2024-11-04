@@ -3,6 +3,7 @@ import ArrowDown from "@/public/icon/arrow-down.svg";
 import ArrowUp from "@/public/icon/arrow-up.svg";
 import star3 from "@/public/icon/star-3.png";
 import star from "@/public/icon/star.png";
+import more from "@/public/img/dashboard/more.png";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import {
@@ -22,65 +23,77 @@ export default function Section5() {
   return (
     <section
       ref={ref}
-      className="snap-start h-screen snap-always relative bg-space bg-repeat flex flex-col items-center pt-32 px-16 gap-10"
+      className="snap-start snap-always lg:h-full relative bg-star bg-black bg-repeat flex flex-col items-center pt-32 px-16 gap-10"
     >
-      <div className="text-white text-3xl font-semibold w-fit text-center">
-        For the longest time, I saw
-        <br /> these unfinished stories and
-        <br /> shattered pieces as FAILURES.
+      <div className="text-xl sm:text-4xl font-semibold w-fit text-center bg-gradient-to-r from-blue-700 to-blue-400 inline-block text-transparent bg-clip-text">
+        For the longest time, I saw these unfinished
+        <br /> stories and shattered pieces as FAILURES.
       </div>
       <motion.div
         variants={STAGGER}
         animate={isInView ? "visible" : "hidden"}
-        className="flex flex-col gap-4 font-semibold"
+        className="grid lg:grid-cols-2 gap-4 font-semibold"
       >
         <motion.div
           variants={TRANSITION_UP}
-          className="bg-white min-w-[500px] flex justify-between items-center rounded-lg gap-4 p-3"
+          className="bg-white px-[32px] py-[64px] rounded-tl-none rounded-3xl relative"
         >
-          <Image width={32} height={32} src={star3} alt="star3" />
+          <Image
+            width={74}
+            height={44}
+            src={more}
+            alt="more"
+            className="absolute -bottom-[25px]"
+          />
           <div>
             Why could I never just commit to one thing, devote myself entirely
             to a single ultimate goal?
           </div>
-          <div className="bg-slate-300 rounded-full p-2 text-white">
-            <Image src={ArrowUp} alt="arrow-up" />
-          </div>
         </motion.div>
         <motion.div
           variants={TRANSITION_UP}
-          className="bg-white w-full flex justify-between items-center rounded-lg gap-4 p-3"
+          className="bg-white px-[32px] py-[64px] rounded-tr-none rounded-3xl relative"
         >
-          <Image width={32} height={32} src={star3} alt="star3" />
+          <Image
+            width={74}
+            height={44}
+            src={more}
+            alt="more"
+            className="absolute -bottom-[25px] right-[25px]"
+          />
           <div>
             Why couldn’t I define, with clarity, what I truly love and let
             everything I do revolve around that single axis?
           </div>
-          <div className="bg-slate-300 rounded-full p-2 text-white">
-            <Image src={ArrowDown} alt="arrow-up" />
-          </div>
         </motion.div>
+
         <motion.div
           variants={TRANSITION_UP}
-          className="bg-white w-full flex justify-between items-center rounded-lg gap-4 p-3"
+          className="bg-white px-[32px] py-[64px] rounded-tl-none rounded-3xl relative"
         >
-          <Image width={32} height={32} src={star3} alt="star3" />
+          <Image
+            width={74}
+            height={44}
+            src={more}
+            alt="more"
+            className="absolute -bottom-[25px]"
+          />
           <div>Why am I drawn to things that seem worlds apart?</div>
-          <div className="bg-slate-300 rounded-full p-2 text-white">
-            <Image src={ArrowDown} alt="arrow-up" />
-          </div>
         </motion.div>
         <motion.div
           variants={TRANSITION_UP}
-          className="bg-white w-full flex justify-between items-center rounded-lg gap-4 p-3"
+          className="bg-white px-[32px] py-[64px] rounded-tr-none rounded-3xl relative"
         >
-          <Image width={32} height={32} src={star3} alt="star3" />
+          <Image
+            width={74}
+            height={44}
+            src={more}
+            alt="more"
+            className="absolute -bottom-[25px] right-[25px]"
+          />
           <div>
             Why do I relish trying them, even if they may never lead to what
             most would call "success"?
-          </div>
-          <div className="bg-slate-300 rounded-full p-2 text-white">
-            <Image src={ArrowDown} alt="arrow-up" />
           </div>
         </motion.div>
       </motion.div>

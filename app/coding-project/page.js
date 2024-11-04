@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar/Navbar";
 import Section1 from "./_components/section1";
-import bannerPic from "@/public/img/coding/banner.svg";
+import bannerPic from "@/public/img/coding/banner.png";
 import Image from "next/image";
 import Section2 from "./_components/section2";
 import Section3 from "./_components/section3";
@@ -18,12 +18,14 @@ import Link from "next/link";
 export default function Page() {
   return (
     <div className="snap-y snap-mandatory h-screen overflow-auto text-black">
-      <section
-        id="section-1"
-        className="snap-start bg-amber-100 h-screen relative"
-      >
+      <section id="section-1" className="snap-start h-screen relative">
         <Navbar />
-        {/* <Image src={bannerPic} objectFit="contain" alt="banner" /> */}
+        <div className="text-3xl sm:text-6xl text-white font-semibold tracking-widest h-full w-full flex justify-center items-center">
+          LUKA MOVE
+        </div>
+        <div className="h-full w-full absolute top-0 -z-10">
+          <Image src={bannerPic} fill objectFit="cover" alt="banner" />
+        </div>
       </section>
       <Section1 />
       <Section2 />

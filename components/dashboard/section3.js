@@ -23,76 +23,105 @@ export default function Section3() {
   return (
     <section
       ref={ref}
-      className="snap-start snap-always h-screen py-10 relative"
-      style={{
-        background: "#07080C",
-      }}
+      className="snap-start bg-star xl:h-full bg-contain py-10 relative bg-black"
     >
       <div
         className="text-white flex justify-center items-center"
         style={{ fontFamily: "Plus Jakarta Sans" }}
       >
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-16 p-5 md:px-10 lg:px-20 h-full">
           <motion.div
             initial={TRANSITION_FADE}
             animate={isInView ? "visible" : "hidden"}
-            className="text-xl lg:text-2xl "
+            className="text-md md:text-lg lg:text-2xl text-center"
           >
             In some inexplicable way, I was born to be a{" "}
-            <strong>collection of broken pieces</strong>: I have{" "}
-            <strong>A LOVE OF SPORTS</strong>,<br /> something raw and rugged,
-            HOWEVER, at the same time, I’m drawn to{" "}
-            <strong>
-              CRAFTING POETRY AND
-              <br />
-              CAPTURING MOMENTS
-            </strong>{" "}
-            in photos—something soft and dreamlike.
+            <span className="text-blue-500">collection of broken pieces</span>:
+            I have{" "}
+            <span className="text-blue-500 font-semibold">
+              A LOVE OF SPORTS
+            </span>
+            ,{/* <br /> */}
+            something raw and rugged,{" "}
+            <span className="text-blue-500 font-semibold">HOWEVER</span>, at the
+            same time, I’m drawn to{" "}
+            <span className="text-blue-500 font-semibold">
+              CRAFTING POETRY AND CAPTURING
+            </span>
+            {/* <br /> */}
+            <span className="text-blue-500 font-semibold">
+              MOMENTS in photos
+            </span>{" "}
+            - something soft and dreamlike.
           </motion.div>
-          <div className="flex flex-col gap-4">
+
+          <motion.div
+            initial={STAGGER}
+            animate={isInView ? "visible" : "hidden"}
+            className="flex flex-col sm:grid grid-cols-2  md:grid-cols-3 gap-4 h-full "
+          >
             <motion.div
-              initial={STAGGER}
-              animate={isInView ? "visible" : "hidden"}
-              className="flex gap-4"
+              variants={TRANSITION_LEFT}
+              className="w-full min-w-[300px] min-h-[300px] h-full relative"
             >
-              <motion.div
-                variants={TRANSITION_LEFT}
-                className="flex-1 max-w-[385px] max-h-[337px] relative"
-              >
-                <Image src={section31} className="rounded-xl" alt="section31" />
-              </motion.div>
-              <motion.div
-                variants={TRANSITION_LEFT}
-                className="flex-1 max-w-[385px] max-h-[337px] relative"
-              >
-                <Image src={section32} className="rounded-xl" alt="section32" />
-              </motion.div>
-              <motion.div
-                variants={TRANSITION_LEFT}
-                className="flex-1 max-w-[397px] max-h-[337px] relative"
-              >
-                <Image src={section33} className="rounded-xl" alt="section33" />
-              </motion.div>
+              <Image
+                src={section31}
+                fill
+                objectFit="cover"
+                className="rounded-xl"
+                alt="section31"
+              />
             </motion.div>
             <motion.div
-              initial={STAGGER}
-              animate={isInView ? "visible" : "hidden"}
-              className="flex flex-wrap gap-4 "
+              variants={TRANSITION_LEFT}
+              className="w-full min-w-[300px] min-h-[300px] h-full relative"
             >
-              <motion.div
-                variants={TRANSITION_RIGHT}
-                className="flex-1 max-w-[749px] max-h-[337px] relative"
-              >
-                <Image src={section34} className="rounded-xl" alt="section31" />
-              </motion.div>
-              <motion.div
-                variants={TRANSITION_RIGHT}
-                className="flex-1 max-w-[443px] max-h-[337px] relative"
-              >
-                <Image src={section35} className="rounded-xl" alt="section32" />
-              </motion.div>
+              <Image
+                src={section32}
+                fill
+                objectFit="cover"
+                className="rounded-xl"
+                alt="section32"
+              />
             </motion.div>
-          </div>
+            <motion.div
+              variants={TRANSITION_LEFT}
+              className="w-full min-w-[300px] min-h-[300px] h-full relative"
+            >
+              <Image
+                src={section33}
+                fill
+                objectFit="cover"
+                className="rounded-xl"
+                alt="section33"
+              />
+            </motion.div>
+
+            <motion.div
+              variants={TRANSITION_LEFT}
+              className="min-w-[300px] min-h-[300px] w-full h-full relative"
+            >
+              <Image
+                src={section35}
+                fill
+                objectFit="cover"
+                className="rounded-xl"
+                alt="section32"
+              />
+            </motion.div>
+            <motion.div
+              variants={TRANSITION_LEFT}
+              className="col-span-2 min-w-[300px] min-h-[300px] w-full h-full relative"
+            >
+              <Image
+                src={section34}
+                fill
+                objectFit="cover"
+                className="rounded-xl"
+                alt="section31"
+              />
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>

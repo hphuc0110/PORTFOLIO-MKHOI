@@ -21,38 +21,17 @@ export default function Slide12() {
       id="main"
       className="items-center snap-start h-screen relative"
     >
-      <Navbar color="dark" />
-      <div
-        className="flex w-full h-full absolute top-0"
-        style={{ zIndex: -1, backgroundColor: "#212121" }}
-      >
-        <motion.div
-          initial={TRANSITION_LEFT.hidden}
-          animate={TRANSITION_LEFT.visible}
-          className="w-full h-screen relative"
-        >
-          <Image src={banner} fill objectFit="cover" alt="banner" />
-        </motion.div>
-        <motion.div
-          initial={TRANSITION_DOWN.hidden}
-          animate={TRANSITION_DOWN.visible}
-          className="absolute top-[300px] right-[100px] text-center"
-        >
-          <div className="text-5xl font-semibold text-amber-500">GrabStudy</div>
-          <div className="mt-5 text-4xl text-white">
-            A Life-Changing Solution for English
-            <br /> learners in Vietnam
-          </div>
-        </motion.div>
+      <Navbar />
+      <div className="text-3xl sm:text-6xl text-white tracking-widest h-full w-full flex flex-col text-center justify-center items-center">
+        <div className="text-3xl sm:text-6xl font-semibold ">GrabStudy</div>
+        <div className="mt-5 text-2xl sm:text-4xl text-white">
+          A Life-Changing Solution for English
+          <br /> learners in Vietnam
+        </div>
       </div>
-      <motion.div
-        initial={TRANSITION_LEFT.hidden}
-        animate={TRANSITION_LEFT.visible}
-        transition={{ delay: 1, duration: 2 }}
-        className="absolute top-[150px] -left-0"
-      >
-        <Image src={star} width={150} height={150} alt="star" />
-      </motion.div>
+      <div className="h-full w-full absolute top-0 -z-10">
+        <Image src={banner} fill objectFit="cover" alt="banner" />
+      </div>
     </motion.section>
   );
 }
