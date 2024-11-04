@@ -1,10 +1,10 @@
 "use client";
-import star from "@/public/icon/star.png";
-import Image from "next/image";
-import section7 from "@/public/img/startup/section7.png";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { STAGGER, TRANSITION_DOWN, TRANSITION_LEFT } from "@/constant/motion";
+import star from "@/public/icon/star.png";
+import Image from "next/image";
+import section7 from "@/public/img/startup/section7.png";
 
 export default function Slide18() {
   const ref = useRef(null);
