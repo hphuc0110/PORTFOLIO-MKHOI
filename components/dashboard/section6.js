@@ -15,7 +15,7 @@ export default function Section6() {
   return (
     <section
       ref={ref}
-      className="snap-start snap-always xl:h-full relative bg-[url(/img/dashboard/bgsection6.png)] bg-cover bg-center pt-32 px-16 xl:px-24                                                                                       overflow-hidden transition-all"
+      className="snap-start snap-always relative bg-[url(/img/dashboard/bgsection6.png)] bg-cover bg-center pt-32 px-16 xl:px-24 pb-12                                                                                       overflow-hidden transition-all"
     >
       <div className="flex flex-wrap justify-center gap-8 xl:gap-10 2xl:gap-12 xl:content-end ">
         <div className="flex flex-col lg:max-w-[890px] h-fit  lg:gap-10 text-lg lg:text-lg xl:text-xl text-center">

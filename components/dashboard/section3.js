@@ -23,7 +23,7 @@ export default function Section3() {
   return (
     <section
       ref={ref}
-      className="snap-start bg-star xl:h-full bg-contain py-10 relative bg-black"
+      className="snap-start bg-star bg-contain py-10 relative bg-black"
     >
       <div
         className="text-white flex justify-center items-center"

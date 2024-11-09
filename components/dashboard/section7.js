@@ -17,7 +17,7 @@ export default function Section7() {
   return (
     <section
       ref={ref}
-      className="snap-start snap-always w-full bg-star bg-black h-screen flex flex-col items-center justify-center transition-all relative"
+      className="snap-start snap-always w-full bg-star bg-black flex flex-col items-center justify-center transition-all relative"
     >
       <div className="rounded-xl w-full h-full flex flex-col xl:flex-row text-white z-10  bg-[url(/img/dashboard/bgsection7.png)] bg-cover bg-center px-12 sm:px-24 py-32">
         <div className="flex flex-col text-xl gap-6 max-w-[816px] h-fit rounded-3xl p-5 sm:p-10 backdrop-blur-md border-slate-700 border">

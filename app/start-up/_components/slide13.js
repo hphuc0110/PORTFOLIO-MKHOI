@@ -22,10 +22,10 @@ export default function Slide13() {
       variants={STAGGER}
       animate={isInView ? "visible" : "hidden"}
       ref={ref}
-      className="snap-start h-screen overflow-auto"
+      className="snap-start"
       style={{ backgroundColor: "#212121" }}
     >
-      <div className="gap-8 h-screen flex flex-col text-center relative ">
+      <div className="gap-8 flex flex-col text-center relative ">
         <div className="text-lg mt-20 text-white flex flex-col font-semibold">
           <div className="text-4xl ">Our ideation</div>
           <div>There is a big demand for English when:</div>

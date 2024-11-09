@@ -11,9 +11,9 @@ export default function Section2() {
   return (
     <section
       id="section-2"
-      className="items-center snap-start bg-black bg-star xl:h-screen relative"
+      className="items-center snap-start bg-black bg-star relative"
     >
-      <div className="flex flex-col p-20 relative">
+      <div className="flex flex-col p-6 sm:p-20 relative">
         <div className="flex flex-col text-center">
           <div className="text-3xl xl:text-5xl font-semibold bg-gradient-to-r from-blue-700 to-blue-400 inline-block text-transparent bg-clip-text ">
             CULTURAL PRESERVATION

@@ -7,7 +7,7 @@ export default function Section3() {
   return (
     <section
       id="section-3"
-      className="items-center snap-start xl:h-screen bg-black bg-star relative transition-all"
+      className="items-center snap-start  bg-black bg-star relative transition-all"
     >
       <div className="flex flex-col p-20 relative">
         <div className="flex flex-col text-center">

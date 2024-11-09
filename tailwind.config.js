@@ -12,6 +12,7 @@ module.exports = {
         space: "url('../public/img/bg-space.jpg')",
         volunteer: "url('../public/img/volunteer/bg.png')",
         star: "url('../public/img/dashboard/bg-star.png')",
+        aveda: "url('../public/img/photography/aveda.jpg')",
       },
       animation: {
         fade: "fadeOut 2.5s ease-in-out",

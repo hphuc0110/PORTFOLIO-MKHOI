@@ -6,12 +6,12 @@ import Link from "next/link";
 export default function Section1() {
   return (
     <section
-      id="main"
-      className="items-center snap-start bg-star h-screen relative bg-black"
+      id="section-1"
+      className="items-center snap-start bg-star relative bg-black"
     >
-      <div className="text-white py-10 px-20 h-full flex flex-col justify-center items-center gap-20">
-        <div className="flex gap-10 w-full">
-          <div className="relative h-full w-full">
+      <div className="text-white py-10 px-6 md:px-12 lg:px-20 h-full flex flex-col justify-center items-center gap-20">
+        <div className="flex gap-10 max-sm:flex-col w-full h-full">
+          <div className="relative max-sm:h-[328px] w-full">
             <Image
               fill
               objectFit="cover"
@@ -42,7 +42,7 @@ export default function Section1() {
             </Link>
           </div>
         </div>
-        <div className="flex gap-10 w-full">
+        <div className="flex max-sm:flex-col-reverse gap-10 w-full">
           <div className="flex flex-col justify-between max-w-[600px]">
             <div>
               <div className="text-xl xl:text-3xl bg-gradient-to-r from-blue-700 to-blue-400 inline-block text-transparent bg-clip-text font-semibold">
@@ -64,7 +64,7 @@ export default function Section1() {
               </div>
             </Link>
           </div>
-          <div className="relative h-full w-full">
+          <div className="relative max-sm:h-[328px] w-full">
             <Image
               fill
               objectFit="cover"
