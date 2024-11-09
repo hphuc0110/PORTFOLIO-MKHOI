@@ -11,7 +11,7 @@ export default function Section2() {
   return (
     <section
       id="section-2"
-      className="items-center snap-start bg-black bg-star relative"
+      className="items-center snap-start min-h-screen bg-black bg-star relative"
     >
       <div className="flex flex-col p-6 sm:p-20 relative">
         <div className="flex flex-col text-center">

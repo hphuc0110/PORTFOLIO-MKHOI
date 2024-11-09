@@ -7,7 +7,7 @@ export default function Section1() {
   return (
     <section
       id="section-1"
-      className="items-center snap-start bg-star relative bg-black"
+      className="items-center snap-start min-h-screen bg-star relative bg-black"
     >
       <div className="text-white py-10 px-6 md:px-12 lg:px-20 h-full flex flex-col justify-center items-center gap-20">
         <div className="flex gap-10 max-sm:flex-col w-full h-full">

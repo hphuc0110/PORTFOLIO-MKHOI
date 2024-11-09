@@ -3,7 +3,7 @@ import section32 from "@/public/img/startup/section32.png";
 import Image from "next/image";
 export default function Slide14() {
   return (
-    <section className="snap-start bg-black text-white px-12">
+    <section className="snap-start min-h-screen bg-black text-white px-12">
       <div className="gap-8 flex flex-col justify-center items-center pt-24">
         <div className="text-3xl xl:text-5xl text-center font-semibold">
           Where is the demand gap?

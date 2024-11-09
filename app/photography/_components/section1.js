@@ -5,7 +5,10 @@ import Link from "next/link";
 
 export default function Section1() {
   return (
-    <section className="snap-start" style={{ backgroundColor: "#212121" }}>
+    <section
+      className="snap-start min-h-screen"
+      style={{ backgroundColor: "#212121" }}
+    >
       <div className="gap-8 flex flex-col items-center relative p-20">
         <div className="text-3xl lg:text-6xl font-semibold text-white flex flex-col gap-2">
           <div>PHOTOGRAPHY</div>

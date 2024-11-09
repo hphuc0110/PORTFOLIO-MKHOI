@@ -23,7 +23,7 @@ export default function Section5() {
   return (
     <section
       ref={ref}
-      className="snap-start snap-always relative bg-star bg-black bg-repeat flex flex-col items-center pt-32 px-16 gap-10 pb-12"
+      className="snap-start snap-always min-h-screen relative bg-star bg-black bg-repeat flex flex-col items-center pt-32 px-16 gap-10 pb-12"
     >
       <div className="text-xl sm:text-4xl font-semibold w-fit text-center bg-gradient-to-r from-blue-700 to-blue-400 inline-block text-transparent bg-clip-text">
         For the longest time, I saw these unfinished

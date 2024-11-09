@@ -22,7 +22,7 @@ export default function Slide13() {
       variants={STAGGER}
       animate={isInView ? "visible" : "hidden"}
       ref={ref}
-      className="snap-start"
+      className="snap-start min-h-screen"
       style={{ backgroundColor: "#212121" }}
     >
       <div className="gap-8 flex flex-col text-center relative ">

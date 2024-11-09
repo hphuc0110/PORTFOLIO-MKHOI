@@ -2,7 +2,7 @@
 
 export default function Section2() {
   return (
-    <section className="snap-start bg-black text-white overflow-auto">
+    <section className="snap-start min-h-screen bg-black text-white overflow-auto">
       <div className="gap-8 flex flex-col relative p-20">
         <div className="text-3xl xl:text-5xl font-semibold text-white flex flex-col gap-2">
           <div>FILMING</div>

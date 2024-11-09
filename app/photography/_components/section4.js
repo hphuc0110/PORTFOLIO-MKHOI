@@ -2,7 +2,7 @@
 
 export default function Section4() {
   return (
-    <section className="snap-start bg-aveda bg-cover bg-center text-white">
+    <section className="snap-start min-h-screen bg-aveda bg-cover bg-center text-white">
       <div className="w-full p-12 lg:p-32 backdrop-blur-sm ">
         <div className="text-2xl h-full text-white flex flex-col gap-4 max-w-[1000px] justify-start">
           <div className="text-5xl font-semibold">
