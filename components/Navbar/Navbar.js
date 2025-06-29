@@ -9,6 +9,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 export default function Navbar({ color = "light" }) {
   const pathName = usePathname();
+  console.log(pathName);
   const isDark = color === "dark";
   const list = [
     { name: "Home", path: "/" },
