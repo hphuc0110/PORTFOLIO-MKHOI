@@ -1,44 +1,86 @@
 import Navbar from "@/components/Navbar/Navbar";
-import Section1 from "./_components/section1";
-import bannerPic from "@/public/img/coding/banner.png";
+import slide1 from "@/public/img/coding/slide1.png";
 import Image from "next/image";
-import Section2 from "./_components/section2";
-import Section3 from "./_components/section3";
-import Section4 from "./_components/section4";
-import Section5 from "./_components/section5";
-import Section6 from "./_components/section6";
-import Section7 from "./_components/section7";
-import Section8 from "./_components/section8";
-import Section9 from "./_components/section9";
-import Section10 from "./_components/section10";
-import Section11 from "./_components/section11";
-import Section12 from "./_components/section12";
+import Slide2 from "./_components/slide2";
+import Slide3 from "./_components/slide3";
+import Slide4 from "./_components/slide4";
+import Slide5 from "./_components/slide5";
+import Slide6 from "./_components/slide6";
+import Slide7 from "./_components/slide7";
+import Slide8 from "./_components/slide8";
+import Slide9 from "./_components/slide9";
+import Slide10 from "./_components/slide10";
+import Slide11 from "./_components/slide11";
+import Slide12 from "./_components/slide12";
+import Slide13 from "./_components/slide13";
+import Slide14 from "./_components/slide14";
+import Slide15 from "./_components/slide15";
+import Slide16 from "./_components/slide16";
+import Slide17 from "./_components/slide17";
+import Slide18 from "./_components/slide18";
+import Slide19 from "./_components/slide19";
+import Slide20 from "./_components/slide20";
+import Slide21 from "./_components/slide21";
+import Slide22 from "./_components/slide22";
+import Slide23 from "./_components/slide23";
+import Slide24 from "./_components/slide24";
+import Slide25 from "./_components/slide25";
+import Slide26 from "./_components/slide26";
+import Slide27 from "./_components/slide27";
+import Slide28 from "./_components/slide28";
+import Slide29 from "./_components/slide29";
+import Slide30 from "./_components/slide30";
+import Slide31 from "./_components/slide31";
+import Slide32 from "./_components/slide32";
+import Slide33 from "./_components/slide33";
+import Slide34 from "./_components/slide34";
+
 import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="snap-y snap-mandatory h-screen overflow-auto text-black">
+    <div id="main-scroll" className="snap-y snap-mandatory h-screen overflow-auto text-black">
       <section id="section-1" className="snap-start h-screen relative">
         <Navbar />
         <div className="text-3xl sm:text-6xl text-white font-semibold tracking-widest h-full w-full flex justify-center items-center">
-          LUKA MOVE
         </div>
         <div className="h-full w-full absolute top-0 -z-10">
-          <Image src={bannerPic} fill objectFit="cover" alt="banner" />
+          <Image src={slide1} fill objectFit="cover" alt="banner" />
         </div>
       </section>
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <Section7 />
-      <Section8 />
-      <Section9 />
-      <Section10 />
-      <Section11 />
-      <Section12 />
+      <Slide2 />
+      <Slide3 />
+      <Slide4 />
+      <Slide5 />
+      <Slide6 />
+      <Slide7 />
+      <Slide8 />
+      <Slide9 />
+      <Slide10 />
+      <Slide11 />
+      <Slide12 />
+      <Slide13 />
+      <Slide14 />
+      <Slide15 />
+      <Slide16 />
+      <Slide17 />
+      <Slide18 />
+      <Slide19 />
+      <Slide20 />
+      <Slide21 />
+      <Slide22 />
+      <Slide23 />
+      <Slide24 />
+      <Slide25 />
+      <Slide26 />
+      <Slide27 />
+      <Slide28 />
+      <Slide29 />
+      <Slide30 />
+      <Slide31 />
+      <Slide32 />
+      <Slide33 />
+      <Slide34 />
       <Link
         href="/coding-project/#section-1"
         className="fixed bottom-8 right-8 bg-gray-800 text-white p-3 rounded-full shadow-md hover:bg-gray-700 focus:outline-none transition-opacity duration-300 select-none"

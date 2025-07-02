@@ -1,9 +1,9 @@
-import Slide36Pic from "@/public/img/volunteer/slide36.png";
+import Slide36Pic from "@/public/img/volunteer/3.png";
 import Image from "next/image";
 export default function Slide36() {
   return (
     <section
-      className="snap-start h-screen relative"
+      className="snap-start h-screen relative "
       style={{
         background: "rgb(16,29,106)",
         background:

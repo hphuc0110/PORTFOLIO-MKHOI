@@ -1,11 +1,10 @@
 "use client";
 import star from "@/public/icon/star.png";
-import section8 from "@/public/img/dashboard/section8.jpg";
+import pic4 from "@/public/img/dashboard/pic4.webp"; // Ảnh sẽ được thêm vào
 import Image from "next/image";
 import { TRANSITION_LEFT } from "@/constant/motion";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import bgSection7 from "@/public/img/dashboard/bgsection7.png";
 import quote from "@/public/icon/quote.svg";
 
 export default function Section7() {
@@ -14,18 +13,22 @@ export default function Section7() {
     margin: "0px 100px -50px 0px",
     once: true,
   });
+
   return (
     <section
       ref={ref}
-      className="snap-start snap-always w-full min-h-screen flex flex-col items-center justify-center transition-all relative  bg-[url(/img/dashboard/bgsection7.png)] bg-cover bg-cente"
+      className="snap-start snap-always w-full min-h-screen flex items-center justify-center transition-all relative bg-[url(/img/dashboard/bgsection7.png)] bg-cover bg-center"
     >
-      <div className="rounded-xl w-full h-full flex flex-col xl:flex-row text-white z-10 r px-12 sm:px-24 py-32">
-        <div className="flex flex-col text-xl gap-6 max-w-[816px] h-fit rounded-3xl p-5 sm:p-10 backdrop-blur-md border-slate-700 border">
-          <div className="flex justify-between items-end">
+      {/* Container chính sử dụng Flexbox */}
+      <div className="w-full h-full flex flex-col xl:flex-row items-center justify-center gap-12 text-white z-10 px-6 sm:px-12 md:px-24 py-20">
+        
+        {/* === CỘT VĂN BẢN (BÊN TRÁI) === */}
+        <div className="flex flex-col text-xl gap-6 max-w-[700px] w-full h-fit rounded-3xl p-8 sm:p-10 backdrop-blur-md border-slate-700 border">
+          <div className="flex justify-between items-start">
             <div className="text-blue-500 text-2xl font-semibold">
-              GIA KHANG
+              MINH KHÔI
             </div>
-            <Image src={quote} alt="quote" />
+            <Image src={quote} alt="quote" className="w-10 h-10" />
           </div>
           <div className="text-3xl font-semibold">
             Perhaps one day, I will bring closure to all the things I’ve begun.
@@ -38,10 +41,20 @@ export default function Section7() {
             But now, I cherish the moments spent in this liminal space. Since I
             know that I always have the opportunity to attempt again, to
             approach things differently, to start anew. Because sometimes, the
-            most captivating stories are those that remain
+            most captivating stories are those that remain unfinished.
           </div>
         </div>
+        <div className="w-full max-w-[800px] h-[650px] relative rounded-3xl overflow-hidden">
+            <Image 
+                src={pic4}
+                alt="Portrait of Minh Khôi"
+                fill
+                style={{ objectFit: 'cover' }}
+            />
+        </div>
+
       </div>
+
       <motion.div
         animate={isInView ? "visible" : "hidden"}
         variants={TRANSITION_LEFT}

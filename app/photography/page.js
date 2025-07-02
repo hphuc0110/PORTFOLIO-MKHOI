@@ -7,7 +7,7 @@ import Section4 from "./_components/section4";
 
 export default function Page() {
   return (
-    <div className="snap-y snap-mandatory h-screen overflow-auto text-black">
+    <div id="main-scroll" className="snap-y snap-mandatory h-screen overflow-auto text-black">
       <Banner />
       <Section1 />
       <Section2 />

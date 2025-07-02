@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="snap-y snap-mandatory h-screen overflow-auto text-black">
+      <div id="main-scroll" className="snap-y snap-mandatory h-screen overflow-auto text-black">
         <Section1 />
         <Section2 />
         <Section3 />

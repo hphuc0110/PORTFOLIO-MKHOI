@@ -12,7 +12,7 @@ import Slide42 from "./_components/slide42";
 
 export default function Page() {
   return (
-    <div className="snap-y snap-mandatory h-screen overflow-auto text-black">
+    <div id="main-scroll" className="snap-y snap-mandatory h-screen overflow-auto text-black position: relative">
       <Slide33 />
       <Slide34 />
       <Slide35 />

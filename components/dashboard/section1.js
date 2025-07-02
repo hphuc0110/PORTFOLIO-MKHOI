@@ -6,7 +6,7 @@ export default function Section1() {
   return (
     <section
       id="section-1"
-      className={`snap-start snap-always h-screen bg-[url(/img/dashboard/section1bg.jpg)] bg-cover `}
+      className={`snap-start snap-always h-screen bg-[url(/img/dashboard/back.jpeg)] bg-cover `}
     >
       <div className="h-screen flex flex-col transition-all">
         <Navbar />

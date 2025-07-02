@@ -1,7 +1,8 @@
-import localFont from "next/font/local";
 import "./globals.css";
+import localFont from "next/font/local";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
+// Load local fonts
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -13,22 +14,24 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const plusJakataSans = Plus_Jakarta_Sans({
+// Load Google Font
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
 
+// Metadata chuẩn
 export const metadata = {
-  title: "GK Portfolio",
-  description: "GIA KHANH Portfolio",
+  title: "MK Portfolio",
+  description: "MINH KHÔI Portfolio",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${plusJakataSans.className} antialiased`}
-      >
+    <html lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} ${plusJakartaSans.className}`}
+    >
+      <body className="antialiased">
         {children}
       </body>
     </html>

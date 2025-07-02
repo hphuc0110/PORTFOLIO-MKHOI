@@ -1,3 +1,4 @@
+'use cli'
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,7 +25,7 @@ import Slide32 from "./_components/slide32";
 
 export default function Page() {
   return (
-    <div className="snap-y snap-mandatory h-screen overflow-auto text-black">
+    <div id="main-scroll" className="snap-y snap-mandatory h-screen overflow-auto text-black">
       <Slide12 />
       <Slide13 />
       <Slide14 />
