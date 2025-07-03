@@ -34,7 +34,7 @@ export default function Navbar({ color = "light" }) {
         className={`flex justify-between items-center p-5 xl:px-24`}
         style={{ backgroundColor: isDark ? "transparent" : "#fff" }}
       >
-        <p className="text-2xl font-semibold text-blue-500">MINH KHÔI</p>
+        <p className="text-2xl font-semibold text-blue-500">MINH KHOI</p>
 
         <div className="lg:hidden">
           <Dialog>
@@ -75,7 +75,6 @@ export default function Navbar({ color = "light" }) {
         </ul>
       </nav>
 
-      {/* ✅ Nút Home cuộn lên đầu trang hiện tại */}
       <button
         onClick={handleHomeClick}
         className="fixed bottom-4 right-4 z-50 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition-all"

@@ -26,7 +26,7 @@ export default function Section7() {
         <div className="flex flex-col text-xl gap-6 max-w-[700px] w-full h-fit rounded-3xl p-8 sm:p-10 backdrop-blur-md border-slate-700 border">
           <div className="flex justify-between items-start">
             <div className="text-blue-500 text-2xl font-semibold">
-              MINH KHÔI
+              MINH KHOI
             </div>
             <Image src={quote} alt="quote" className="w-10 h-10" />
           </div>

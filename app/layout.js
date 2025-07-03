@@ -23,7 +23,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 // Metadata chuẩn
 export const metadata = {
   title: "MK Portfolio",
-  description: "MINH KHÔI Portfolio",
+  description: "MINH KHOI Portfolio",
 };
 
 export default function RootLayout({ children }) {
