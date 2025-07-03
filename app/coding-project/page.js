@@ -24,16 +24,6 @@ import Slide21 from "./_components/slide21";
 import Slide22 from "./_components/slide22";
 import Slide23 from "./_components/slide23";
 import Slide24 from "./_components/slide24";
-import Slide25 from "./_components/slide25";
-import Slide26 from "./_components/slide26";
-import Slide27 from "./_components/slide27";
-import Slide28 from "./_components/slide28";
-import Slide29 from "./_components/slide29";
-import Slide30 from "./_components/slide30";
-import Slide31 from "./_components/slide31";
-import Slide32 from "./_components/slide32";
-import Slide33 from "./_components/slide33";
-import Slide34 from "./_components/slide34";
 
 import Link from "next/link";
 
@@ -71,16 +61,6 @@ export default function Page() {
       <Slide22 />
       <Slide23 />
       <Slide24 />
-      <Slide25 />
-      <Slide26 />
-      <Slide27 />
-      <Slide28 />
-      <Slide29 />
-      <Slide30 />
-      <Slide31 />
-      <Slide32 />
-      <Slide33 />
-      <Slide34 />
       <Link
         href="/coding-project/#section-1"
         className="fixed bottom-8 right-8 bg-gray-800 text-white p-3 rounded-full shadow-md hover:bg-gray-700 focus:outline-none transition-opacity duration-300 select-none"
