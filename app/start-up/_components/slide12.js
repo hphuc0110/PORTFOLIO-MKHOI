@@ -23,7 +23,7 @@ export default function Slide12() {
     >
       <Navbar />
       <div className="text-3xl sm:text-6xl text-white tracking-widest h-full w-full flex flex-col text-center justify-center items-center">
-        <div className="text-3xl sm:text-6xl font-semibold ">GrabStudy</div>
+        <div className="text-3xl sm:text-6xl font-semibold ">Grab Study</div>
         <div className="mt-5 text-2xl sm:text-4xl text-white">
           A Life-Changing Solution for English
           <br /> learners in Vietnam

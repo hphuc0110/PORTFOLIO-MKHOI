@@ -12,7 +12,7 @@ export default function Navbar({ color = "light" }) {
 
   const list = [
     { name: "Home", path: "/" },
-    { name: "Coding Projects", path: "/coding-project" },
+    { name: "DreamUp", path: "/coding-project" },
     { name: "My Start-up", path: "/start-up" },
     { name: "Volunteer Projects", path: "/volunteer-project" },
     { name: "Photography & Filming", path: "/photography" },

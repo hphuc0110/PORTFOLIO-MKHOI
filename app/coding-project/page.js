@@ -1,12 +1,11 @@
 import Navbar from "@/components/Navbar/Navbar";
-import slide1 from "@/public/img/coding/slide1.png";
+import Slide1 from "@/public/img/coding/slide1.png";
 import Image from "next/image";
 import Slide2 from "./_components/slide2";
 import Slide3 from "./_components/slide3";
 import Slide4 from "./_components/slide4";
 import Slide5 from "./_components/slide5";
 import Slide6 from "./_components/slide6";
-import Slide7 from "./_components/slide7";
 import Slide8 from "./_components/slide8";
 import Slide9 from "./_components/slide9";
 import Slide10 from "./_components/slide10";
@@ -35,7 +34,7 @@ export default function Page() {
         <div className="text-3xl sm:text-6xl text-white font-semibold tracking-widest h-full w-full flex justify-center items-center">
         </div>
         <div className="h-full w-full absolute top-0 -z-10">
-          <Image src={slide1} fill objectFit="cover" alt="banner" />
+          <Image src={Slide1} fill objectFit="cover" alt="banner" />
         </div>
       </section>
       <Slide2 />
@@ -43,7 +42,6 @@ export default function Page() {
       <Slide4 />
       <Slide5 />
       <Slide6 />
-      <Slide7 />
       <Slide8 />
       <Slide9 />
       <Slide10 />
@@ -62,7 +60,7 @@ export default function Page() {
       <Slide23 />
       <Slide24 />
       <Link
-        href="/coding-project/#section-1"
+        href="/dream-up/#section-1"
         className="fixed bottom-8 right-8 bg-gray-800 text-white p-3 rounded-full shadow-md hover:bg-gray-700 focus:outline-none transition-opacity duration-300 select-none"
       >
         <svg

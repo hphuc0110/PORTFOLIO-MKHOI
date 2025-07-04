@@ -6,6 +6,7 @@ import Section42 from "@/components/dashboard/section42";
 import Section5 from "@/components/dashboard/section5";
 import Section6 from "@/components/dashboard/section6";
 import Section7 from "@/components/dashboard/section7";
+
 import Link from "next/link";
 
 export default function Home() {

@@ -1,4 +1,4 @@
-import Slide2Pic from "@/public/img/coding/slide2.png";
+import Slide2Pic from "@/public/img/coding/slide2.webp";
 import Image from "next/image";
 export default function Slide2() {
   return (

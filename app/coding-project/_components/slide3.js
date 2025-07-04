@@ -1,4 +1,4 @@
-import Slide3Pic from "@/public/img/coding/slide3.png";
+import Slide3Pic from "@/public/img/coding/slide3.webp";
 import Image from "next/image";
 export default function Slide3() {
   return (

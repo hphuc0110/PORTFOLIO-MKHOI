@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import section1Pic from "@/public/img/coding/section1.png";
 import star from "@/public/icon/star.png";
 import planet from "@/public/icon/planet.png";
 import {

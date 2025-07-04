@@ -19,7 +19,7 @@ export default function Section2() {
             CULTURAL PRESERVATION
           </div>
           <div className="mt-5 xl:text-xl text-white">
-            Tuồng, an art form that has existed for centuries and stands as one
+            Tuong, an art form that has existed for centuries and stands as one
             of the symbols of Vietnamese culture, is gradually fading as its
             essence no longer resonates with the younger generation,
             particularly in terms of content and language. It’s not that young

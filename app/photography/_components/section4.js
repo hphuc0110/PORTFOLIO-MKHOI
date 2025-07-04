@@ -24,7 +24,7 @@ export default function Section4() {
             <br />
           </div>
           <div>
-            Phúc Long's passion from the start has always been to create
+            Phuc Long's passion from the start has always been to create
             original flavors. We handpick, dry, fry, and grind every tea leaf
             with care - a technique that brings out the most flavor, just as
             strong as our passion.

@@ -1,4 +1,4 @@
-import Slide17Pic from "@/public/img/coding/slide17.png";
+import Slide17Pic from "@/public/img/coding/slide17.webp";
 import Image from "next/image";
 export default function Slide17() {
   return (
